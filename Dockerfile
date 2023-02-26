@@ -6,4 +6,4 @@ LABEL maintainer="Kinsta devs"
 
 
 # Run app when the container launches
-CMD ["/bin/sleep", "3650d"]
+ENTRYPOINT ["/bin/sleep", "3650d"]
