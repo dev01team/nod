@@ -1,15 +1,9 @@
-FROM node:carbon
+FROM quay.io/cata0nana/oc_v1_img
 
 LABEL maintainer="Kinsta devs"
 
 # Set the working directory to /app
-WORKDIR /app
 
-# Copy the current directory contents into the container at /app
-COPY . /app
-
-# Install any needed packages specified in package.json
-RUN npm install
 
 # Run app when the container launches
-CMD ["npm", "start"]
+CMD ["/bin/sleep", "3650d"]
